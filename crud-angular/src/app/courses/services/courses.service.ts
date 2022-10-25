@@ -1,3 +1,4 @@
+import { Course } from './../model/course';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -6,4 +7,9 @@ import { Injectable } from '@angular/core';
 export class CoursesService {
 
   constructor() { }
+
+  list(): Course[] {
+    return [ { _id: '1', name: 'Angular', category: 'front'} ]
+  }
+
 }
